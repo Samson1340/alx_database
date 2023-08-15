@@ -1,1 +1,1 @@
-This is the introduction to SQL projects
+This is the introduction to SQL projects!
