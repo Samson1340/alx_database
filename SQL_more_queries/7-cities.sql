@@ -1,10 +1,10 @@
 -- This is for database creation with table 
 CREATE DATABASE IF NOT EXISTS `hbtn_0d_usa`;
-USE hbtn_0d_usa;
+use hbtn_0d_usa;
 CREATE TABLE IF NOT EXISTS `cities`
 (
-id INT NOT NULL PRIMARY KEY AUTO_INCREMENT UNIQUE,
-name VARCHAR(256),
-state_id INT NOT NULL, 
-FOREIGN KEY (state_id) REFERENCES state(id)
+	id INT PRIMARY KEY AUTO_INCREMENT NOT NULL UNIQUE,
+	state_id INT NOT NULL,
+	name VARCHAR(256),
+	FOREIGN KEY(state_id) REFERENCES states(id)
 );
